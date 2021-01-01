@@ -1,0 +1,87 @@
+<style>
+    .container{
+        width: 1305px;
+        max-width: 100%;
+        height: auto;
+    }
+    .header {
+        display: flex;
+        flex-flow: row;
+        justify-content: end;
+        align-items: baseline;
+        margin: 20px 0;
+    }
+    .link{
+        padding: 0 10px;
+        font-size: 12px;
+        text-decoration: none;
+        color: black;
+    }
+    .user {
+	    background-color: #6464c6;
+	    color: white;
+	    font-size: 18px;
+        border-radius: 50%;
+        width: 18px;
+        height: 18px;
+        padding: 8px;
+    }    
+    .main {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .form{
+        display:flex;
+        flex-flow: column;
+        align-items: center;
+    }
+    .content{
+        margin-top: 10px;
+    }
+    .footer {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-around;
+    }
+</style>
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Google</title>
+    </head>
+
+    <body class="container">
+        <header class="header">
+            <a class="link" href="">Mail</a>
+            <a class="link" href="">Pictures</a>
+            <a class="link user" href="">M</a>
+        </header>
+        
+        <main class="main">
+            <img class="content" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
+
+            <form class="content form">
+                <div>
+                  <label for="search">Enter search term: </label>
+                  <input class="content" type="text" name="name" id="search" required>
+                </div>
+                <div>
+                  <input class="content" type="submit" value="Search">
+                </div>
+              </form>
+
+            <p class="content link">Other languages:<a  class="link" href="">English</a></p>
+        </main>
+
+        <footer class="footer">
+            <a class="link" href="">Ad</a>
+            <a class="link" href="">About Google</a>
+            <a class="link" href="">Copyright</a>
+        </footer>
+
+    </body>
+</html>
